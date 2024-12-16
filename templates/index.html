@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Movie Recommender</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container-1">
+        <h1>Binge with your movies</h1>
+    </div>
+    <div class="container">
+        <form id="movieForm">
+            <input type="text" id="movieInput" placeholder="Enter a movie name" required>
+            <button type="submit">Get Recommendations Buddy!</button>
+        </form>
+        <div id="results">
+            <h2>Enjoy!</h2>
+            <ul id="recommendationList"></ul>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>
